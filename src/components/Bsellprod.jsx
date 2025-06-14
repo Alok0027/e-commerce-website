@@ -4,7 +4,7 @@ import eyeliner from '../assets/eyeliner.jpg';
 
 const Bsellprod = () =>{
     return(
-        <div className="py-10">
+        <div className="py-10 max-w-screen-xl mx-auto px-4">
                 <h1 className="text-4xl font-extralight text-center my-11">
                     Our Best Sellings
                 </h1>

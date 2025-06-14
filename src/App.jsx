@@ -8,6 +8,8 @@ import Aboutus from './components/Aboutus.jsx';
 import Bsellprod from './components/Bsellprod.jsx';
 import Latestprod from './components/Latestprod.jsx';
 import Imagesec from './components/imagesec.jsx';
+import Footer from './components/Footer.jsx';
+import Lastvid from './components/Lastvid.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +24,8 @@ function App() {
       <Bsellprod />
       <Imagesec />
       <Latestprod />
-      
+      <Lastvid />
+      <Footer />
     </>
   )
 }

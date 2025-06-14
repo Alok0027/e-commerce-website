@@ -4,7 +4,7 @@ import pallete from '../assets/pallete.jpg';
 
 const Latestprod = () => {
     return (
-        <div className="py-10">
+        <div className="py-10 max-w-max mx-auto px-4">
                         <h1 className="text-4xl font-extralight text-center my-11">
                                 Latest Products
                         </h1>
