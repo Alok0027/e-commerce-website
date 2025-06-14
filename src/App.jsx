@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/navbar.jsx";
 import AnnouncementBar from "./components/AnnouncementBar.jsx";
 import Hero from './components/hero.jsx';
 import Oproduct from './components/Oproduct.jsx';
