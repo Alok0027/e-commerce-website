@@ -11,7 +11,6 @@ const Hero = () => {
         className="absolute top-0 left-0 w-full h-3/4 object-cover z-0"
       >
         <source src={herovid} type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
 
       <div className="relative z-10 h-full w-full flex flex-col items-center justify-center text-white text-center px-4">

@@ -3,6 +3,11 @@ import './App.css'
 import Navbar from "./components/Navbar.jsx";
 import AnnouncementBar from "./components/AnnouncementBar.jsx";
 import Hero from './components/hero.jsx';
+import Oproduct from './components/Oproduct.jsx';
+import Aboutus from './components/Aboutus.jsx';
+import Bsellprod from './components/Bsellprod.jsx';
+import Latestprod from './components/Latestprod.jsx';
+import Imagesec from './components/imagesec.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +17,12 @@ function App() {
       <AnnouncementBar />
       <Navbar/>
       <Hero />
+      <Oproduct />
+      <Aboutus />
+      <Bsellprod />
+      <Imagesec />
+      <Latestprod />
+      
     </>
   )
 }
