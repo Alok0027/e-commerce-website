@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from "./components/navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 import AnnouncementBar from "./components/AnnouncementBar.jsx";
-import Hero from './components/hero.jsx';
+import Hero from './components/Hero.jsx';
 import Oproduct from './components/Oproduct.jsx';
 import Aboutus from './components/Aboutus.jsx';
 import Bsellprod from './components/Bsellprod.jsx';

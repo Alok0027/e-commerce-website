@@ -2,7 +2,7 @@ import lastvid from '../assets/lastvid.mp4';
 
 const Lastvid = () => {
     return(
-    <div className="relative w-full h-screen overflow-hidden bg-orange-500 flex items-center justify-between px-16">
+    <div className="relative w-full h-screen overflow-hidden bg-oklch(83.7% 0.128 66.29) flex items-center justify-between px-16">
       <video 
         autoPlay
         muted
