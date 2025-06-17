@@ -8,7 +8,7 @@ const Cart = () => {
   return (
     <Smallay>
     <div className="bg-[#f9f9f9] min-h-screen p-8">
-      <h1 className="text-3xl font-semibold text-center mb-10">CART</h1>
+      <h1 className="text-3xl font-medium text-center mb-10 font-mono"> Your Cart</h1>
 
       {cartItems.length === 0 ? (
         <div className="flex flex-col items-center justify-center min-h-[300px]">

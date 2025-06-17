@@ -18,7 +18,8 @@ const Trust = () => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 px-4">
+            <div className="overflow-hidden mt-10">
+                <div className="flex animate-scroll-horizontal gap-8 px-4 w-max">
                 
                                     <div className="overflow-hidden">
                                         <img src={logoipsum} alt="haircream" className="w-40 h-36 filter grayscale"/>
@@ -49,7 +50,38 @@ const Trust = () => {
                                         <img src={logoipsumcom} alt="foundation" className="w-40 h-36 filter grayscale" />
                                 </div>        
 
+                                
+                                    <div className="overflow-hidden">
+                                        <img src={logoipsum} alt="haircream" className="w-40 h-36 filter grayscale"/>
+                                    </div>
+                                
+                    
+                                
+                                    <div className="overflow-hidden">
+                                        <img src={acmecorp} alt="handcream" className="w-40 h-36 filter grayscale" />
+                                    </div>
+                                
+                    
+                                
+                                    <div className="overflow-hidden">
+                                        <img src={epicurious} alt="foundation" className="w-40 h-36 filter grayscale" />
+                                    </div>
+                                   
+
+                                <div className="overflow-hidden">
+                                        <img src={globalbank} alt="foundation" className="w-40 h-36 filter grayscale" />
+                                    </div>
+
+                                <div className="overflow-hidden">
+                                        <img src={lightbox} alt="foundation" className="w-40 h-36 filter grayscale" />
+                                </div>
+
+                                <div className="overflow-hidden">
+                                        <img src={logoipsumcom} alt="foundation" className="w-40 h-36 filter grayscale" />
+                                </div>        
+
                             </div>
+            </div>
 
 
         </div>

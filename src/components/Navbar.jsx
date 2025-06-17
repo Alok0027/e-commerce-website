@@ -4,14 +4,43 @@ import newprofile from '../assets/newprofile.png';
 import newcart from '../assets/newcart.png';
 import amaia from '../assets/amaia.png';
 import mlogo from '../assets/mlogo.png';
+import { useEffect, useState, useRef } from 'react';
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const prevScrollPos = useRef(window.scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setIsScrolled(currentScrollPos > 10);
+
+      if (currentScrollPos < 100 || currentScrollPos < prevScrollPos.current) {
+        setShowNavbar(true); // Show on scroll up
+      } else {
+        setShowNavbar(false); // Hide on scroll down
+      }
+
+      prevScrollPos.current = currentScrollPos;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
 
-    <nav className="bg-stone-200 shadow-md py-4 px-2 flex items-center justify-between h-16">
+    <nav className={`${isScrolled ? 'bg-transparent' : 'bg-stone-200'} transition-colors duration-500 py-4 px-2 flex items-center justify-between h-16 fixed w-full top-0 z-50 ${showNavbar ? 'block' : 'hidden'}`}>
+
+        <div className="flex items-center h-10 w-auto ml-20 gap-4">
+            <a href="#">
+                <img src={mlogo} alt="Brand m" className="h-8 w-6" />
+             </a>
+      </div>
 
         <div className="hidden md:flex gap-7 font-inter font-medium text-sm text-black pl-16">
-        
+
         {[
           { text: "OUR STORY", path: "/about" },
           { text: "SHOP", path: "/shop" },
@@ -28,13 +57,6 @@ const Navbar = () => {
             <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
           </Link>
         ))}
-      </div>
-
-        <div className="flex items-center h-10 w-44 mr-32 gap-4">
-            <img src={mlogo} alt="Brand m" className="h-8 w-8" />
-            <a href="#">
-                <img src={amaia} alt="Brand Logo" className="h-8 w-28" />
-             </a>
       </div>
 
       

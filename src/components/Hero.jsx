@@ -1,11 +1,24 @@
+import { useEffect, useState } from "react";
 import kewhero from "../assets/kewhero.jpg";
+import trialp1 from "../assets/trialp1.jpg"
+import trialp2 from "../assets/trialp2.jpg"
 
 const Hero = () => {
+  const images = [trialp1, trialp2, kewhero];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000); // change every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="relative h-[90vh] w-screen overflow-hidden ">
+    <div className="relative h-[95vh] w-screen overflow-hidden ">
       <div>
         <a href="#">
-            <img src={kewhero} alt="Hero Background" className="absolute inset-0 w-full h-full object-cover filter brightness-75" />
+            <img src={images[currentImageIndex]} alt="Hero Background" className="absolute inset-0 w-full h-full object-cover filter brightness-75 transition-opacity duration-1000" />
         </a>
       </div>
 
