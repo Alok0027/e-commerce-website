@@ -3,7 +3,7 @@ import logoblack from '../assets/logoblack.jpg';
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white px-10 py-20 h-96 w-screen">
+        <footer className="bg-black text-white px-10 py-20 h-96 w-screen mt-28">
   <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
     <div className="text-white p-4 gap-3">

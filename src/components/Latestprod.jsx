@@ -1,44 +1,96 @@
-import compact from '../assets/compact.jpg';
-import conceller from '../assets/conceller.jpg';
-import pallete from '../assets/pallete.jpg';
+import { Link } from 'react-router-dom';
+import explorearrow from '../assets/explorearrow.svg';
+import eyecream from '../assets/eyecream.jpg';
+import bottle from '../assets/bottle.jpg';
+import rosespray from '../assets/rosespray.jpg';
+import mineralpowder from '../assets/mineralpowder.jpg';
+import greenmask from '../assets/greenmask.jpg';
+import ageserum from '../assets/ageserum.jpg';
 
 const Latestprod = () => {
     return (
-        <div className="py-10 max-w-max mx-auto px-4">
-                        <h1 className="text-4xl font-extralight text-center my-11">
-                                Latest Products
-                        </h1>
-                
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
-                
-                            <div className="bg-white rounded-lg shadow-2xl overflow-hidden relative">
-                                <div className="overflow-hidden">
-                                    <img src={compact} alt="Compact" className="w-full h-80 object-cover transform transition-transform duration-300 hover:scale-110"/>
-                                </div>
-                
-                                <div className="p-4 text-center font-medium">Compact</div>
-                
-                            </div>
-                
-                            <div className="bg-white rounded-lg shadow-2xl overflow-hidden relative">
-                                <div className="overflow-hidden">
-                                    <img src={conceller} alt="Conceller" className="w-full h-80 object-cover transform transition-transform duration-300 hover:scale-110" />
-                                </div>
-                
-                                <div className="p-4 text-center font-medium">Conceller</div>
-                
-                            </div>
-                
-                            <div className="bg-white rounded-lg shadow-2xl overflow-hidden relative">
-                                <div className="overflow-hidden">
-                                    <img src={pallete} alt="Pallete" className="w-full h-80 object-cover transform transition-transform duration-300 hover:scale-110" />
-                                </div>
-                
-                                <div className="p-4 text-center font-medium">Pallete</div>
-                
-                            </div>
-                        </div>
-                </div>            
+       <section className="bg-[#faf8f6] ">   
+               <div className="py-10 w-11/12 mx-auto px-4">
+                       <h1 className="text-4xl text-fuchsia-950 font-normal text-left my-9 ml-4">
+                                   <p className="text-sm font-normal mb-2">
+                                       <img src={explorearrow} alt="Explore Icon" className="inline-block mr-2 h-6 w-6" />
+                                       RECENTLY RELEASED
+                                       </p>
+                                        Latest Products
+                               </h1>
+               
+                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2 gap-8 px-4">
+               
+                           <Link to="/desc">
+                             <div className="bg-white rounded-xl shadow-md overflow-hidden relative ">
+                                 <div className="overflow-hidden">
+                                     <img src={rosespray} alt="haircream" className="w-screen h-80 object-cover transform transition-transform duration-700 hover:scale-105 px-24"/>
+                                 </div>
+                                 <div className="p-4 text-center text-xl font-normal mt-1">Silk Smooth Hair Serum
+                                   <p className='font-normal text-base'>Rs.550</p>
+                                 </div>
+                             </div>
+                           </Link>
+               
+                           <Link to="/desc">
+                             <div className="bg-white rounded-lg shadow-md overflow-hidden relative">
+                                 <div className="overflow-hidden">
+                                     <img src={ageserum} alt="handcream" className="w-screen h-80 object-cover transform transition-transform duration-700 hover:scale-105 px-24" />
+                                 </div>
+                                 <div className="p-4 text-center text-xl font-normal mt-1">Shea Butter Hand Cream
+                                   <p className='font-normal text-base'>Rs.450</p>
+                                 </div>
+                             </div>
+                           </Link>
+               
+                           <Link to="/desc">
+                             <div className="bg-white rounded-lg shadow-md overflow-hidden relative">
+                                 <div className="overflow-hidden">
+                                     <img src={mineralpowder} alt="foundation" className="w-screen h-80 object-cover transform transition-transform duration-700 hover:scale-105 px-24" />
+                                 </div>
+                                 <div className="p-4 text-center text-xl font-normal mt-1">Silky Smooth Foundation 
+                                     <p className='font-normal text-base'>Rs.660</p>
+                                 </div>
+                             </div>
+                           </Link>
+
+                           <Link to="/desc">
+                             <div className="bg-white rounded-lg shadow-md overflow-hidden relative">
+                                 <div className="overflow-hidden">
+                                     <img src={greenmask} alt="foundation" className="w-screen h-80 object-cover transform transition-transform duration-700 hover:scale-105 px-24" />
+                                 </div>
+                                 <div className="p-4 text-center text-xl font-normal mt-1">Silky Smooth Foundation 
+                                     <p className='font-normal text-base'>Rs.660</p>
+                                 </div>
+                             </div>
+                           </Link>
+
+                           <Link to="/desc">
+                             <div className="bg-white rounded-lg shadow-md overflow-hidden relative">
+                                 <div className="overflow-hidden">
+                                     <img src={bottle} alt="foundation" className="w-screen h-80 object-cover transform transition-transform duration-700 hover:scale-105 px-24" />
+                                 </div>
+                                 <div className="p-4 text-center text-xl font-normal mt-1">Silky Smooth Foundation 
+                                     <p className='font-normal text-base'>Rs.660</p>
+                                 </div>
+                             </div>
+                           </Link>
+
+                           <Link to="/desc">
+                             <div className="bg-white rounded-lg shadow-md overflow-hidden relative">
+                                 <div className="overflow-hidden">
+                                     <img src={eyecream} alt="foundation" className="w-screen h-80 object-cover transform transition-transform duration-700 hover:scale-105 px-24" />
+                                 </div>
+                                 <div className="p-4 text-center text-xl font-normal mt-1">Silky Smooth Foundation 
+                                     <p className='font-normal text-base'>Rs.660</p>
+                                 </div>
+                             </div>
+                           </Link>
+
+                       </div>
+               </div>  
+       
+           </section>          
     );
     }
 export default Latestprod;
