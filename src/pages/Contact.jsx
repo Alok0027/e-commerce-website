@@ -10,7 +10,6 @@ const Contact = () => {
       <h3 className="text-[#612c2c] text-sm font-semibold mb-2">➤ GET IN TOUCH</h3>
       <h1 className="text-5xl font-semibold text-[#4b2c2c] mb-12">Contact us</h1>
       <div className="grid md:grid-cols-2 gap-12">
-        {/* Left Form */}
         <form className="flex flex-col gap-6">
           <div>
             <label className="block text-gray-700 mb-2">Full name*</label>
@@ -31,7 +30,6 @@ const Contact = () => {
           <button type="submit" className="bg-black text-white px-6 py-2 rounded-md w-fit">Submit Now</button>
         </form>
 
-        {/* Right Info */}
         <div className="space-y-6">
           <p className="text-gray-700">Our team is ready to assist you with any inquiries regarding our products, services, or orders.</p>
           <div className="flex gap-2">
@@ -40,7 +38,6 @@ const Contact = () => {
             <img src={brook} alt="Team Member" className="w-8 h-8 rounded-full" />
           </div>
           <div className="flex flex-col md:flex-row gap-4">
-            {/* Email box */}
             <div className="bg-[#e8dfd7] rounded-lg p-4 w-full md:w-1/2">
               <div className="flex items-center gap-2 mb-2">
                 <div className="p-2 bg-white rounded-full">
@@ -51,10 +48,8 @@ const Contact = () => {
               <p className="text-sm text-gray-800 mb-1 border-b border-gray-300 pb-1">info@example.com</p>
               <p className="text-sm text-gray-600">Need help? Write to us, and we’ll respond promptly!</p>
             </div>
-            {/* Image */}
             <img src={contactimg} alt="Contact" className="rounded-lg w-full md:w-1/2 h-auto object-cover" />
           </div>
-          {/* Contact Details */}
           <div className="pt-4">
             <p className="text-sm font-semibold text-gray-800">Phone</p>
             <p className="text-sm text-gray-600 mb-2">+(480) 555-0103</p>

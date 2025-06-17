@@ -15,7 +15,6 @@ const ArticleL = () => {
         Latest Articles
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 mt-4">
-                {/* First Article Card */}
                 <div className="bg-white rounded-lg shadow p-6" style={{ width: '628px', height: '341px' }}>
                     <p className="text-sm text-gray-600 mb-2">Sustainability | Jan 29, 2025</p>
                     <h2 className="text-lg font-medium text-black mb-4">
@@ -24,7 +23,6 @@ const ArticleL = () => {
                     <img src={article1} alt="Eco-friendly packaging" className="w-72 h-40 object-cover rounded-md mb-4 ml-72" />
                     <p className="text-sm text-black">Read Article →</p>
                 </div>
-                {/* Second Article Card */}
                 <div className="bg-white rounded-lg shadow p-6" style={{ width: '628px', height: '341px' }}>
                     <p className="text-sm text-gray-600 mb-2">Skincare Tips | Jan 29, 2025</p>
                     <h2 className="text-lg font-medium text-black mb-4">

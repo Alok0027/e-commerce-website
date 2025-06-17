@@ -9,12 +9,10 @@ const Desc = () => {
   return (
     <Smallay>
     <div className="bg-[#f7f3ef] min-h-screen px-8 md:px-24 py-28 font-sans flex flex-col lg:flex-row gap-8">
-      {/* Image Section */}
       <div className="flex-1 flex items-center justify-center mb-72">
         <img src={silkhairserum} alt="Product" className="w-full max-w-md rounded-lg" />
       </div>
 
-      {/* Description Section */}
       <div className="flex-1 text-black space-y-5 mt-8">
         <div className="flex flex-col">
         <h1 className="text-4xl font-normal">Silk Smooth Hair Serum</h1>
