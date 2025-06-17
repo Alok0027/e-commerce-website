@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.jpg';
 import newsearch from '../assets/newsearch.png';
 import newprofile from '../assets/newprofile.png';
 import newcart from '../assets/newcart.png';
+import amaia from '../assets/amaia.png';
+import mlogo from '../assets/mlogo.png';
 
 const Navbar = () => {
   return (
 
-    <nav className="bg-stone-200 shadow-md py-4 px-6 flex items-center justify-between h-16">
+    <nav className="bg-stone-200 shadow-md py-4 px-2 flex items-center justify-between h-16">
 
         <div className="hidden md:flex gap-7 font-inter font-medium text-sm text-black pl-16">
         
@@ -29,9 +30,10 @@ const Navbar = () => {
         ))}
       </div>
 
-        <div className="flex items-center h-10 w-24 mr-72">
+        <div className="flex items-center h-10 w-44 mr-32 gap-4">
+            <img src={mlogo} alt="Brand m" className="h-8 w-8" />
             <a href="#">
-                <img src={logo} alt="Brand Logo" className="h-10 w-auto" />
+                <img src={amaia} alt="Brand Logo" className="h-8 w-28" />
              </a>
       </div>
 

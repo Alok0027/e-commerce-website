@@ -51,8 +51,7 @@ const Testimonial = () => {
                   <div key={index} className="border-t border-gray-200 py-6 ml-24 pr-8">
                     <div
                       onClick={() => setActiveIndex(index === activeIndex ? null : index)}
-                      className="flex items-center justify-between cursor-pointer"
-                    >
+                      className="flex items-center justify-between cursor-pointer">
                         
                       <div className="flex items-center gap-4">
                         <span className="ml-2 inline-block text-lg font-bold transition-transform duration-500" style={{ transform: activeIndex === index? 'rotateZ(45deg) scale3d(1, 1, 1)': 'rotateZ(0deg) scale3d(1, 1, 1)',transformStyle: 'preserve-3d',}}>

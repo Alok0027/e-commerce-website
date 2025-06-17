@@ -2,10 +2,14 @@ import truck from "../assets/truck.svg";
 import watch from "../assets/watch.svg";
 import silkhairserum from "../assets/silkhairserum.jpg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useCart } from "../context/Cartcontext";
 import Smallay from "../components/Smallay";
 
 const Desc = () => {
   const [activeTab, setActiveTab] = useState("overview");
+  const { addToCart } = useCart();
+  const navigate = useNavigate();
   return (
     <Smallay>
     <div className="bg-[#f7f3ef] min-h-screen px-8 md:px-24 py-28 font-sans flex flex-col lg:flex-row gap-8">
@@ -19,7 +23,7 @@ const Desc = () => {
         <p className="text-lg text-gray-600">
           Tame frizz and add shine with this smoothing serum.
         </p>
-        <p className="text-xl font-semibold">$18.99 USD</p>
+        <p className="text-xl font-semibold">Rs. 18.99 </p>
 
         <ul className="list-disc list-inside text-gray-600 space-y-1">
           <li>Lightweight formula for silky</li>
@@ -32,9 +36,20 @@ const Desc = () => {
             type="number"
             min="1"
             defaultValue="1"
-            className="w-12 text-center border border-gray-300 rounded-md py-1"
+            className="w-12 text-center border border-gray-300 rounded-md py-4"
           />
-          <button className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition">
+          <button
+            onClick={() => {
+              addToCart({
+                id: "silk-smooth-hair-serum",
+                name: "Silk Smooth Hair Serum",
+                price: 18.99,
+                image: silkhairserum,
+              });
+              navigate("/cart");
+            }}
+            className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition inline-block text-center"
+          >
             Add to Cart
           </button>
         </div>

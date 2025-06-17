@@ -19,14 +19,18 @@ import Blog from "./pages/Blog";
 import Review from "./pages/Review";
 import Contact from "./pages/Contact";
 import Desc from "./pages/Desc";
+import Cart from "./pages/Cart";
+import { CartProvider } from './context/Cartcontext';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <CartProvider>
     <BrowserRouter>
       
       <Routes>
+        
         <Route
           path="/"
           element={
@@ -52,9 +56,13 @@ function App() {
         <Route path="/review" element={<Review />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/desc" element={<Desc />} />
+        <Route path="/cart" element={<Cart />} />
+        
       </Routes>
+
       
     </BrowserRouter>
+    </CartProvider>
   )
 }
 

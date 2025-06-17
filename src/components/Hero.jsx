@@ -1,11 +1,11 @@
-import heropic from "../assets/heropic.jpg";
+import kewhero from "../assets/kewhero.jpg";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen w-screen overflow-hidden ">
+    <div className="relative h-[90vh] w-screen overflow-hidden ">
       <div>
         <a href="#">
-            <img src={heropic} alt="Hero Background" className="absolute inset-0 w-full h-full object-cover filter brightness-75" />
+            <img src={kewhero} alt="Hero Background" className="absolute inset-0 w-full h-full object-cover filter brightness-75" />
         </a>
       </div>
 
