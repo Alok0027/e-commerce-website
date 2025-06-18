@@ -17,9 +17,9 @@ const Navbar = () => {
       setIsScrolled(currentScrollPos > 10);
 
       if (currentScrollPos < 100 || currentScrollPos < prevScrollPos.current) {
-        setShowNavbar(true); // Show on scroll up
+        setShowNavbar(true);
       } else {
-        setShowNavbar(false); // Hide on scroll down
+        setShowNavbar(false);
       }
 
       prevScrollPos.current = currentScrollPos;

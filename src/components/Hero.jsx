@@ -10,7 +10,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // change every 4 seconds
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
