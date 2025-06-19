@@ -1,4 +1,3 @@
-import amaiafoter from '../assets/amaiafoter.png';
 
 
 const Footer = () => {
@@ -7,9 +6,9 @@ const Footer = () => {
   <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
     <div className="text-white p-4 gap-3">
-        <img src={amaiafoter} alt="Logo" className="w-28 h-10 mb-2" />
+        <div className="text-xl font-bold mb-2">SkinCareSample</div>
         Designed by Alok. Powered by Nexolve.
-        © 2025 Vash.
+        © 2025 SkinCareSample.
     </div>
 
     <div className="text-white p-4 gap-3">

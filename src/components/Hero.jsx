@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import kewhero from "../assets/kewhero.jpg";
-import trialp1 from "../assets/trialp1.jpg"
-import trialp2 from "../assets/trialp2.jpg"
+import hdimg5 from "../assets/hdimg5.jpg";
+import hdimg4 from "../assets/hdimg4.png";
+import hdimg3 from "../assets/hdimg3.jpg";
 
 const Hero = () => {
-  const images = [trialp1, trialp2, kewhero];
+  const images = [hdimg5, hdimg4, hdimg3];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -15,28 +15,28 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-[95vh] w-screen overflow-hidden ">
+    <div className="relative h-[95vh] w-screen overflow-hidden pt-24">
       <div>
         <a href="#">
             <img src={images[currentImageIndex]} alt="Hero Background" className="absolute inset-0 w-full h-full object-cover filter brightness-75 transition-opacity duration-1000" />
         </a>
       </div>
 
-      <div className="relative z-10 h-full w-full flex flex-col items-start justify-center text-white text-center pl-20 pb-72">
+      <div className="relative z-10 h-full w-full flex flex-col justify-center text-white text-left px-8 md:px-28">
 
-        <h1 className="text-6xl font-extrabold mb-4 drop-shadow-lg">
+        <h1 className="text-6xl font-light mb-4 drop-shadow-lg font-sans">
           Glow brighter every
         </h1>
-        <h1 className="text-6xl font-extrabold mb-4 drop-shadow-lg">
+        <h1 className="text-6xl font-light mb-4 drop-shadow-lg">
           day with cosmetics
         </h1>
-        <h1 className="text-6xl font-extrabold mb-4 drop-shadow-lg">
+        <h1 className="text-6xl font-light mb-4 drop-shadow-lg">
           that best in you
         </h1>
-        <p className="text-xl font-normal drop-shadow-md">
+        <p className="text-xl font-extralight drop-shadow-md">
           Elevate your beauty with luxurious cosmetics
         </p>
-         <p className="text-xl font-normal drop-shadow-md">
+         <p className="text-xl font-extralight drop-shadow-md">
           crafted to celebrate your natural charm.
         </p>
                 <button className="bg-white text-black px-4 py-2 rounded-lg font-normal shadow hover:bg-gray-100 transition 

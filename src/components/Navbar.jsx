@@ -3,7 +3,6 @@ import newsearch from '../assets/newsearch.png';
 import newprofile from '../assets/newprofile.png';
 import newcart from '../assets/newcart.png';
 import amaia from '../assets/amaia.png';
-import mlogo from '../assets/mlogo.png';
 import { useEffect, useState, useRef } from 'react';
 
 const Navbar = () => {
@@ -34,9 +33,9 @@ const Navbar = () => {
     <nav className={`${isScrolled ? 'bg-transparent' : 'bg-stone-200'} transition-colors duration-500 py-4 px-2 flex items-center justify-between h-16 fixed w-full top-0 z-50 ${showNavbar ? 'block' : 'hidden'}`}>
 
         <div className="flex items-center h-10 w-auto ml-20 gap-4">
-            <a href="#">
-                <img src={mlogo} alt="Brand m" className="h-8 w-6" />
-             </a>
+            <Link to="/" className="text-xl font-light tracking-wide text-black font-serif">
+              SkinCareSample
+            </Link>
       </div>
 
         <div className="hidden md:flex gap-7 font-inter font-medium text-sm text-black pl-16">
