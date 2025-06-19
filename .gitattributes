@@ -1,2 +1,2 @@
-#src/**/*.css linguist-vendored
-src/assets/* linguist-vendored
+src/**/*.css linguist-vendored
+#src/assets/* linguist-vendored
